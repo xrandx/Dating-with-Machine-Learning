@@ -77,4 +77,6 @@ ndarray 是一个同类型数据的多维容器，我们很多操作都需要使
 
 - 尝试使用 `arange`, `linspace`, `ones`, `zeros`, `eye` 和 `diag` 函数创建数组。
 - 在使用随机数之前设置随机数种子(seed)。
-- 将数组保存为文件。https://www.numpy.org.cn/reference/routines/io.html#%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6
+- 将数组保存为文件，然后从文件中恢复。[文档](https://www.numpy.org.cn/reference/routines/io.html#%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6)
+
+- 
