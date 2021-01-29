@@ -65,12 +65,16 @@ pyplot 部分：https://matplotlib.org/tutorials/introductory/pyplot.html
   - 设置坐标轴
 
     ```python
+    #   latex 公式
     ax = plt.gca()
-    ax.spines['right'].set_color('black')
-    ax.spines['top'].set_color('black')
+    
+    ax.spines['right'].set_color('none')
+    ax.spines['top'].set_color('none')
+    #   bottom left
     ax.xaxis.set_ticks_position('bottom')
-    #   position[0] should be one of 'outward', 'axes', or 'data' 
-    ax.spines['bottom'].set_position(("0", 0))
+    #   position[0] should be one of 'outward', 'axes', or 'data'
+    ax.spines['bottom'].set_position(("data", 0))
+    
     ax.yaxis.set_ticks_position('left')
     ax.spines['left'].set_position(("data", 0))
     ```
@@ -127,5 +131,5 @@ pyplot 部分：https://matplotlib.org/tutorials/introductory/pyplot.html
 
   - ```python
     import matplotlib.pyplot as plt
-    help(plt.plot)   
+    help(plt.plot)
     ```
