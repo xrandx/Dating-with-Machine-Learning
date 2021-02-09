@@ -2,33 +2,89 @@
 
 ### 课程纲要
 
-#### 索引
+#### 索引对象
 
-- loc——通过行标签索引行数据
+- 不可变的对象，便于赋值
 
   ```python
-  data = [[1,2,3],[4,5,6]]
-  index = [0,1]
-  columns=['a','b','c']
-  df = pd.DataFrame(data=data, index=index, columns=columns)
-  print df.loc[1]
-  '''
-  a    4
-  b    5
-  c    6
-  '''
+  obj = pd.Series(range(3), index=['a', 'b', 'c'])
+  index = obj.index
+  # index[1] = 'd'
+  index = pd.Index(np.arange(3))
+  obj2 = pd.Series([1.5, -2.5, 0], index=index)
+  print(obj2.index is index)
+  #	True
   ```
 
-- iloc 在index的位置上进行索引，不包括end.
+- 重新索引 Series（填充默认值、修改默认值填充方法）
 
   ```python
-  # 选择第1行数据
-  df.iloc[0]
+  obj = pd.Series([4, 7, 0.3, 3], index=['a', 'b', 'c', 'd'])
+  print(obj)
+  # a    4.0
+  # b    7.0
+  # c    0.3
+  # d    3.0
+  # dtype: float64
+  obj = obj.reindex(['a', 'b', 'c', 'd', 'e'])
+  print(obj)
+  # a    4.0
+  # b    7.0
+  # c    0.3
+  # d    3.0
+  # e    NaN
+  # dtype: float64
+  
+  '''填充默认值'''
+  obj = obj.reindex(['a', 'b', 'c', 'd', 'e'], fill_value=0)
+  # a    4.0
+  # b    7.0
+  # c    0.3
+  # d    3.0
+  # e    0.0
+  # dtype: float64
+  
+  '''修改默认值填充方法 ffill  bfill'''
+  obj = pd.Series(['blue', 'purple', 'yellow'], index=[0, 2, 4])
+  print(obj.reindex(range(6), method='ffill'))
+  # 0      blue
+  # 1      blue
+  # 2    purple
+  # 3    purple
+  # 4    yellow
+  # 5    yellow
+  # dtype: object
+  ```
+
+- 重新索引 DataFrame（索引 index, coloums）
+
+  ```python
+  src = {
+      'Hubei': ['Shiyan', 'Xiaogan', 'Hankou'],
+      'Hunan': ['Yueyang', 'Changsha', 'Xiangtan'],
+      'Qinghai': ['Haibei', 'Haidong', 'Haixi']
+  }
+  df = pd.DataFrame(src)
+  df = df.reindex(['a', 'b', 'c', 'd'])
+  print(df)
+  #      Hubei     Hunan  Qinghai
+  # a   Shiyan   Yueyang   Haibei
+  # b  Xiaogan  Changsha  Haidong
+  # c   Hankou  Xiangtan    Haixi
+  # d      NaN       NaN      NaN
+  
+  states = ['Hubei', 'Hunan', 'Qinghai', 'Shanghai']
+  df = df.reindex(columns=states)
+  print(df)
+  #      Hubei     Hunan  Qinghai  Shanghai
+  # a   Shiyan   Yueyang   Haibei       NaN
+  # b  Xiaogan  Changsha  Haidong       NaN
+  # c   Hankou  Xiangtan    Haixi       NaN
   ```
 
   
 
-- ix 先在index的标签上索引，索引不到就在index的位置上索引(如果index非全整数),不包括end.
+- 
 
 #### 转换 numpy
 

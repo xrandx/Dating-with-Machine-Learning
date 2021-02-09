@@ -59,27 +59,28 @@
       obj1 = pd.Series(np.arange(4), index=['a', 'b', 'c', 'f'])
       obj1['a', 'c'] = "modified"
       obj1[:2] = "modified"
-    obj1["new"] = "modified"
-    ```
-  
-    - 改变 `index`
-  
+      obj1["new"] = "modified"
+      ```
+    
+  - 改变 `index`
+    
       ```python
       obj1 = pd.Series(np.arange(4), index=['a', 'b', 'c', 'f'])
       print(obj1)
     obj1.index = ['x', 'y', 'z', '1']
     ```
+
   
-    - 改变 `name`
-  
+  - 改变 `name`
+    
       ```python
-    obj1.name = "text"
-    ```
+      obj1.name = "text"
+	  ```
   
 - 运算
   
     - 自动对齐
-  
+    
       ```python
       obj1 = pd.Series(1, index=['a', 'b', 'c', 'f'])
       obj2 = pd.Series(1, index=['a', 'b', 'c', 'd'])
