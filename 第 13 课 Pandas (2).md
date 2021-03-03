@@ -65,13 +65,18 @@
       'Qinghai': ['Haibei', 'Haidong', 'Haixi']
   }
   df = pd.DataFrame(src)
-  df = df.reindex(['a', 'b', 'c', 'd'])
+  df.index = pd.Series(['a', 'b', 'c'])
   print(df)
   #      Hubei     Hunan  Qinghai
   # a   Shiyan   Yueyang   Haibei
   # b  Xiaogan  Changsha  Haidong
   # c   Hankou  Xiangtan    Haixi
-  # d      NaN       NaN      NaN
+  
+  df = df.reindex(['b', 'a', 'c'])
+  #      Hubei     Hunan  Qinghai
+  # b  Xiaogan  Changsha  Haidong
+  # a   Shiyan   Yueyang   Haibei
+  # c   Hankou  Xiangtan    Haixi
   
   states = ['Hubei', 'Hunan', 'Qinghai', 'Shanghai']
   df = df.reindex(columns=states)
@@ -82,11 +87,103 @@
   # c   Hankou  Xiangtan    Haixi       NaN
   ```
 
+
+### 查看数据
+
+- 切片
+
+  ```python
+  #      Hubei     Hunan  Qinghai
+  # a   Shiyan   Yueyang   Haibei
+  # b  Xiaogan  Changsha  Haidong
+  # c   Hankou  Xiangtan    Haixi
+  
+  #	查找行
+  print(df[0:2])
+  print(df['a': 'b'])
+  
+  #      Hubei     Hunan  Qinghai
+  # a   Shiyan   Yueyang   Haibei
+  # b  Xiaogan  Changsha  Haidong
+  
+  #	查找列
+  print(df['Hubei'])
+  # a     Shiyan
+  # b    Xiaogan
+  # c     Hankou
+  # Name: Hubei, dtype: object
+  ```
+
+- 标签（按index）
+
+  ```python
+  #      Hubei     Hunan  Qinghai
+  # a   Shiyan   Yueyang   Haibei
+  # b  Xiaogan  Changsha  Haidong
+  # c   Hankou  Xiangtan    Haixi
+  
+  print(df.loc['a'])
+  # Hubei       Shiyan
+  # Hunan      Yueyang
+  # Qinghai     Haibei
+  # Name: a, dtype: object
+  
+  print(df.loc['a': 'b', "Hunan":'Qinghai'])
+  #       Hunan  Qinghai
+  # a   Yueyang   Haibei
+  # b  Changsha  Haidong
+  ```
+
+- 位置
+
+  ```python
+  #      Hubei     Hunan  Qinghai
+  # a   Shiyan   Yueyang   Haibei
+  # b  Xiaogan  Changsha  Haidong
+  # c   Hankou  Xiangtan    Haixi
+  
+  print(df.iloc[1])
+  # Hubei       Xiaogan
+  # Hunan      Changsha
+  # Qinghai     Haidong
+  # Name: b, dtype: object
+  
+  print(df.iloc[0, 1:2])
+  # Hunan    Yueyang
+  # Name: a, dtype: object
+  
+  print(df.iloc[[0, 2], :])
+  #     Hubei     Hunan Qinghai
+  # a  Shiyan   Yueyang  Haibei
+  # c  Hankou  Xiangtan   Haixi
+  ```
+
+- 布尔索引
+
+  ```python
+  df[df > 2]
+  print(df[df.isin(["Changsha"])])
+  #   Hubei     Hunan Qinghai
+  # a   NaN       NaN     NaN
+  # b   NaN  Changsha     NaN
+  # c   NaN       NaN     NaN
+  ```
+
   
 
-- 
-
 #### 转换 numpy
+
+```python
+src = pd.read_csv(filename, sep="\s+", header=None)
+src = src.values
+row_num, col_num = src.shape
+X = np.hstack((np.ones((row_num, 1)), src[:, 0: col_num - 1]))
+Y = src[:, col_num - 1:col_num]
+```
+
+
+
+
 
 #### 数据清理命令
 
@@ -104,8 +201,16 @@
 
 #### 分组、排序和过滤数据
 
-- 返回列值的groupby对象：`df.groupby(colm)`
+- 返回列值的 groupby 对象：`df.groupby(colm)`
 - 返回多列值的groupby对象：`df.groupby([colm1, colm2])`
 - 按升序排序（按列）：`df.sort_values(colm1)`
 - 要按降序排序（按列）：`df.sort_values(colm2, ascending=False)`
 - 提取列值大于0.6的行：`df[df[colm] > 0.6]`
+
+#### **其他**
+
+- 将第一个DataFrame的行添加到第二个DataFrame的末尾：`df1.append(df2)`
+- 将第一个DataFrame的列添加到第二个DataFrame的末尾：`pd.concat([df1,df2],axis=1)`
+- 返回所有列的平均值：`df.mean()`
+- 返回非空值的数量：`df.count()`
+
