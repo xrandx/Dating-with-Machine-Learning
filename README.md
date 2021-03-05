@@ -15,7 +15,7 @@
 | 第 10 课 NumPy 计算和广播原理 | [Github](https://github.com/xrandx/Data-analysis-for-python/blob/master/%E7%AC%AC%2010%20%E8%AF%BE%20NumPy%20%E8%AE%A1%E7%AE%97%E5%92%8C%E5%B9%BF%E6%92%AD%E5%8E%9F%E7%90%86.md) \| [博客](http://benearyou.com/lesson-10-numpy-computing-and-broadcasting-principles/) \| [1月26日录播](https://www.bilibili.com/video/BV1e54y1s7L9/) | 1月26日 | 动手实现代码 |
 | 第 11 课 Matplotlib 画图 | [Github](https://github.com/xrandx/Data-analysis-for-python/blob/master/第 11 课 Matplotlib 画图.md) \| [录播](https://www.bilibili.com/video/BV1cX4y1N7uG/) |  | 动手实现代码 |
 | 第 12 课 Pandas (1) | [Github](https://github.com/xrandx/Data-analysis-for-python/blob/master/%E7%AC%AC%2012%20%E8%AF%BE%20Pandas%20(1).md) \| [视频](https://www.bilibili.com/video/BV1ko4y1d77U/) |  | 动手实现代码 |
-| 第 13 课 Pandas (2) | [Github](https://github.com/xrandx/Data-analysis-for-python/blob/master/ML1. 机器学习入门.ipynb) | |  |
+| 第 13 课 Pandas (2) | [Github](https://github.com/xrandx/Data-analysis-for-python/blob/master/%E7%AC%AC%2013%20%E8%AF%BE%20Pandas%20(2).md) | |  |
 
 ## 机器学习与数据分析
 
@@ -50,7 +50,7 @@
 
 | 课节 | 文档和视频                                                   | 直播时间(20:00) | 课后作业期限(23:59) |
 | ---- | ------------------------------------------------------------ | --------------- | ------------------- |
-| 1    | [ML1. 机器学习入门](https://github.com/xrandx/Data-analysis-for-python/blob/master/ML1.%20%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8.md) \| [bilibili](https://www.bilibili.com/video/BV1LZ4y1P7gB/) | 星期三          | 星期五              |
+| 1    | [ML1. 机器学习入门](https://github.com/xrandx/Data-analysis-for-python/blob/master/ML1.%20%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8.ipynb) \| [bilibili](https://www.bilibili.com/video/BV1LZ4y1P7gB/) | 星期三          | 星期五              |
 | 2    |                                                              | 星期六          |                     |
 
 
