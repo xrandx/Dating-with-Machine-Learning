@@ -38,9 +38,9 @@
 
 | 课节 | 文档和视频                                                   | 直播时间(20:00) | 课后作业期限(23:59) |
 | ---- | ------------------------------------------------------------ | --------------- | ------------------- |
-| 1    | [ML1. 机器学习入门](https://github.com/xrandx/Data-analysis-for-python/blob/master/ML1.%20%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8.ipynb) \| [bilibili](https://www.bilibili.com/video/BV1LZ4y1P7gB/) | 星期三          | 星期五              |
-| 2    | [ML2. 模型评估与选择（数据集构建）](https://github.com/xrandx/Data-analysis-for-python/blob/master/ML2.%20%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0%E4%B8%8E%E9%80%89%E6%8B%A9%EF%BC%88%E6%95%B0%E6%8D%AE%E9%9B%86%E6%9E%84%E5%BB%BA%EF%BC%89.ipynb) \| [bilibili](https://www.bilibili.com/video/BV1bz4y117Nq/) | 星期六          | 无                  |
-| 3    | ML3. 线性模型                                                |                 |                     |
+| 1    | [ML1. 机器学习入门](https://github.com/xrandx/Data-analysis-for-python/blob/master/ML1.%20%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8.md) \| [bilibili](https://www.bilibili.com/video/BV1LZ4y1P7gB/) | 星期三          | 星期五              |
+| 2    | [ML2. 模型评估与选择（数据集构建）](https://github.com/xrandx/Data-analysis-for-python/blob/master/ML2.%20%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0%E4%B8%8E%E9%80%89%E6%8B%A9%EF%BC%88%E6%95%B0%E6%8D%AE%E9%9B%86%E6%9E%84%E5%BB%BA%EF%BC%89.md) \| [bilibili](https://www.bilibili.com/video/BV1bz4y117Nq/) | 星期六          | 无                  |
+| 3    | [ML3. 线性模型基础](https://github.com/xrandx/Dating-with-Machine-Learning/blob/master/ML3.%20%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80.md) \| [bilibili](https://www.bilibili.com/video/BV1WN411Q7SC) |                 |                     |
 
 
 ## Python 使用
