@@ -17,6 +17,8 @@
 
 ### 课程表
 
+可以下载文件，用 Typora 在电脑打开，或者上[知乎](https://www.zhihu.com/column/c_1353447533394444289) 。
+
 | 课节 | 文档和视频                                                   | 直播时间(20:00) | 课后作业期限(23:59) |
 | ---- | ------------------------------------------------------------ | --------------- | ------------------- |
 | 1    | [ML1. 机器学习入门](http://benearyou.com/introduction-to-machine-learning/) \| [bilibili](https://www.bilibili.com/video/BV1LZ4y1P7gB/) | 星期三          | 星期五              |
