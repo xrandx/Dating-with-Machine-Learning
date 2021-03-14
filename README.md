@@ -19,7 +19,9 @@
 
 ### 课程表
 
-可以下载文件，用 Typora 在电脑打开，或者上[知乎](https://www.zhihu.com/column/c_1353447533394444289) 。
+课程文档可以下载文件，用 Typora 在电脑打开，或者上[知乎](https://www.zhihu.com/column/c_1353447533394444289) 。
+
+[All Cheat Sheets](https://github.com/xrandx/Dating-with-Machine-Learning/blob/master/All%20Cheat%20Sheets.pdf) 是几个著名数据分析框架的“作弊表”，有些代码不会写的可以看看就上手。
 
 | 课节 | 文档和视频                                                   | 直播时间(20:00) | 课后作业期限(23:59) |
 | ---- | ------------------------------------------------------------ | --------------- | ------------------- |
