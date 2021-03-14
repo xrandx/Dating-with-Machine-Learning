@@ -26,7 +26,7 @@
 | 1    | [ML1. 机器学习入门](http://benearyou.com/introduction-to-machine-learning/) \| [bilibili](https://www.bilibili.com/video/BV1LZ4y1P7gB/) | 星期三          | 星期五              |
 | 2    | [ML2. 模型评估与选择（数据集构建）](http://benearyou.com/model-evaluation-and-selection-data-set-construction/) \| [bilibili](https://www.bilibili.com/video/BV1bz4y117Nq/) | 星期六          | 无                  |
 | 3    | [ML3. 线性模型基础](http://benearyou.com/basic-of-linear-model/) \| [bilibili](https://www.bilibili.com/video/BV1WN411Q7SC) | 星期三          | 无                  |
-| 4    | [ML4. 线性回归实验]( https://github.com/xrandx/Dating-with-Machine-Learning/blob/master/ML4.%20exercise%20by%20xpzoumeng.zip) |                 | 星期三              |
+| 4    | [ML4. 线性回归实验]( https://github.com/xrandx/Dating-with-Machine-Learning/blob/master/ML4.%20exercise%20by%20xpzoumeng.zip) \| ML4. 对数几率回归与广义线性模型 | 星期一 3.15     |                     |
 
 
 ### 课程结构
