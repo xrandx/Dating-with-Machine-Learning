@@ -1,5 +1,7 @@
 # Dating-with-Machine-Learning
 
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=xrandx.Dating-with-Machine-Learning)
+
 这个冬天跟 Python 有一个约会——Python 数据分析课。
 
 是 [Dating-with-python-this-winter](https://github.com/xrandx/Dating-with-python-this-winter) 的后续。
