@@ -106,7 +106,7 @@ $$
 
 我们引入一个对数几率函数（logistic function ，logit 函数，也叫 sigmoid 函数）来实现实数集到 [0, 1] 的映射。将预测值投影到0-1之间，从而将线性回归问题转化为二分类问题。
 $$
-y = \frac{1}{1-e^z}
+y = \frac{1}{1+e^z}
 $$
 <img src="https://gitee.com/xrandx/blog-figurebed/raw/master/img/20210315174317.png" alt="C886BFB9-0C77-4894-B1CF-37409315BB57" style="zoom: 33%;" />
 
@@ -136,6 +136,17 @@ $$
 E_\mathrm{in} = \ln(1 + \exp(-y\mathbf{w^\top x}))
 $$
 
+我们的批量损失函数一般是这样的：
+$$
+\mathrm{Lost}\left(h_{\theta}(x), y\right)=\left\{\begin{array}{ll}
+-\log \left(h_{\theta}(x)\right) & y=1 \\
+-\log \left(1-h_{\theta}(x)\right) & y=0
+\end{array}\right.
+$$
+合并为这个式子：
+$$
+\mathrm{Lost}\left(h_{\theta}(x), y\right)=-y \log \left(h_{\theta}(x)\right)-(1-y) \log \left(1-h_{\theta}(x)\right)
+$$
 
 ## 广义线性模型
 
