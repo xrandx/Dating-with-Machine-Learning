@@ -1,5 +1,7 @@
 # 识别手写数字
 
+<img src="https://gitee.com/xrandx/blog-figurebed/raw/master/img/20210324194756.png" alt="mnist-3.0.1" style="zoom: 25%;" />
+
 > MNIST 数据集 (Mixed National Institute of Standards and Technology database) 是美国国家标准与技术研究院收集整理的大型手写数字数据库,包含60,000个示例的训练集以及10,000个示例的测试集。
 
 ## 获取数据
@@ -159,7 +161,7 @@ def logistic_regression(X, y, aim_digit):
 
 ### 评价指标
 
-准确率(accuracy)计算公式为：
+准确率**(accuracy**)计算公式为：
 $$
 A C C=\frac{T P+T N}{T P+T N+F P+F N}
 $$
