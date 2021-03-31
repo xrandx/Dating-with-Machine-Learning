@@ -28,8 +28,9 @@
 | 1    | [ML1. 机器学习入门](http://benearyou.com/introduction-to-machine-learning/) \| [bilibili](https://www.bilibili.com/video/BV1LZ4y1P7gB/) | 星期三          | 星期五              |
 | 2    | [ML2. 模型评估与选择（数据集构建）](http://benearyou.com/model-evaluation-and-selection-data-set-construction/) \| [bilibili](https://www.bilibili.com/video/BV1bz4y117Nq/) | 星期六          | 无                  |
 | 3    | [ML3. 线性模型基础](http://benearyou.com/basic-of-linear-model/) \| [bilibili](https://www.bilibili.com/video/BV1WN411Q7SC) | 星期三          | 无                  |
-| 4    | [ML4. 线性回归实验]( https://github.com/xrandx/Dating-with-Machine-Learning/blob/master/ML4.%20exercise%20by%20xpzoumeng.zip) \| [ML4. 对数几率回归与广义线性模型](https://github.com/xrandx/Dating-with-Machine-Learning/blob/master/ML4.%20%E5%AF%B9%E6%95%B0%E5%87%A0%E7%8E%87%E5%9B%9E%E5%BD%92%E4%B8%8E%E5%B9%BF%E4%B9%89%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B.md) \| bilibili | 星期一          |                     |
-| 5    |                                                              |                 |                     |
+| 4    | [ML4. 线性回归实验]( https://github.com/xrandx/Dating-with-Machine-Learning/blob/master/ML4.%20exercise%20by%20xpzoumeng.zip) \| [ML4. 对数几率回归与广义线性模型](https://github.com/xrandx/Dating-with-Machine-Learning/blob/master/ML4.%20%E5%AF%B9%E6%95%B0%E5%87%A0%E7%8E%87%E5%9B%9E%E5%BD%92%E4%B8%8E%E5%B9%BF%E4%B9%89%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B.md) \| [bilibili](https://www.bilibili.com/video/BV15v411a7xW) | 星期一          |                     |
+| 5    | ML5. 线性模型识别手写数字 \| [bilibili](https://www.bilibili.com/video/BV1P54y1h7CY) | 星期三 3.31     |                     |
+| 6    | ML6. 层层递进，决策树模型 \|                                 |                 |                     |
 
 
 ### 课程结构
