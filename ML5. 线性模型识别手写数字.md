@@ -1,4 +1,4 @@
-# 识别手写数字
+# 线性模型识别手写数字
 
 <img src="https://gitee.com/xrandx/blog-figurebed/raw/master/img/20210324194756.png" alt="mnist-3.0.1" style="zoom: 25%;" />
 
