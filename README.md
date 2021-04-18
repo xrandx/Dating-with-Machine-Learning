@@ -2,6 +2,13 @@
 
 ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=xrandx.Dating-with-Machine-Learning)
 
+
+转移到了 https://datingmachinelearning.github.io/
+
+
+---
+
+
 这个春天一起机器学习 —— Python 数据分析课。
 
 是 [Dating-with-python-this-winter](https://github.com/xrandx/Dating-with-python-this-winter) 的后续。
